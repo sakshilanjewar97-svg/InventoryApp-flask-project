@@ -1,0 +1,23 @@
+<h2>Categories</h2>
+
+<a href="/add_category">Add Category</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+
+    {% for c in categories %}
+    <tr>
+        <td>{{ c[0] }}</td>
+        <td>{{ c[1] }}</td>
+        <td>
+            <a href="/delete_category/{{ c[0] }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/dashboard">Back</a>

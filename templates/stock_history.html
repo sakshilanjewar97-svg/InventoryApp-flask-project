@@ -1,0 +1,25 @@
+<h2>Stock History</h2>
+
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Product</th>
+    <th>Qty</th>
+    <th>Action</th>
+    <th>Note</th>
+    <th>Date</th>
+</tr>
+
+{% for l in logs %}
+<tr>
+    <td>{{ l[0] }}</td>
+    <td>{{ l[1] }}</td>
+    <td>{{ l[2] }}</td>
+    <td>{{ l[3] }}</td>
+    <td>{{ l[4] }}</td>
+    <td>{{ l[5] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/dashboard">Back</a>

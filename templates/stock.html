@@ -1,0 +1,17 @@
+<h2>Update Stock</h2>
+
+<p>Product: {{ product[0] }}</p>
+<p>Current Qty: {{ product[1] }}</p>
+
+<form method="POST">
+    <input type="number" name="qty" required>
+
+    <select name="action">
+        <option value="IN">Stock IN</option>
+        <option value="OUT">Stock OUT</option>
+    </select>
+
+    <input type="text" name="note" placeholder="Reason">
+
+    <button type="submit">Update</button>
+</form>

@@ -1,0 +1,27 @@
+<h2>Suppliers</h2>
+
+<a href="/add_supplier">Add Supplier</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+
+    {% for s in suppliers %}
+    <tr>
+        <td>{{ s[0] }}</td>
+        <td>{{ s[1] }}</td>
+        <td>{{ s[2] }}</td>
+        <td>{{ s[3] }}</td>
+        <td>
+            <a href="/delete_supplier/{{ s[0] }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/dashboard">Back</a>
