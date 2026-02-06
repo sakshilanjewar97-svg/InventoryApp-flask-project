@@ -1,0 +1,1 @@
+# InventoryApp-flask-project
